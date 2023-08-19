@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #CCCCCC;
+        }
+
+        header, footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header img, footer img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        #about {
+            text-align: center;
+            padding: 2em;
+        }
+
+        #about img {
+            width: 25vh;
+            height: 25vh;
+            border-radius: 50%;
+        }
+
+        #skills, #projects, #resume, #contact {
+            text-align: center;
+            padding: 2em;
+            position: relative;
+        }
+
+        .section-title {
+            color: #000000;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: ":";
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        .skill, .project {
+            display: inline-block;
+            margin: 0 1em;
+        }
+
+        .project {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+         .tech-image {
+            width: 25vh;
+            height: 25vh;
+            object-fit:cover;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+        .project img{
+            width: 100%;
+            height:50vh;
+            object-fit:cover;
+            border-radius: 0%;
+        }
+
+        #resume a {
+            color: darkblue;
+            text-decoration: none;
+        }
+
+        footer {
+            font-size: 0.8em;
+        }
+
+        h2, p, span {
+            color: #000000;
+            margin: 0;
+        }
+
+        .description {
+            color: #000000;
+            margin-top: 0.5em;
+        }
+
+        .text {
+            color: #000000;
+        }
+        
+
+        
+    </style>
+    <title>Web Developer Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Jayesh Khemani</h1>
+        <p style="color: white;">Web Developer</p>
+    </header>
+    <section id="about">
+        <img src="photo_2023-08-19_02-44-58.jpg" alt="Your Name">
+        <p class="description">A passionate web developer ready to accept challenges and keep learning.</p>
+    </section>
+    <section id="skills">
+        <h2 class="section-title">Skills</h2> <br>
+        <div class="skill">
+            <img src="html.png" alt="Your Name">
+            <span class="text">HTML5</span>
+        </div>
+        <div class="skill">
+            <img src="css.png" alt="Your Name">
+            <span class="text">CSS3</span>
+        </div>
+        <div class="skill">
+            <img src="js.png" alt="Your Name">
+            <span class="text">JavaScript</span>
+        </div>
+        <div class="skill">
+            <img src="responsive.png" alt="Your Name">
+            <span class="text">Responsive Design</span>
+        </div>
+    </section>
+    <section id="projects">
+        <h2 class="section-title">Projects</h2> <br>
+        <div class="project">
+            <img src="calc.png" alt="Project 1" class="tech-image">
+            <h3 class="text">Calculator</h3>
+            <p class="text" style="text-align: center;">A functional calculator created using HTML, CSS, and JavaScript, providing basic arithmetic operations and an intuitive user interface for efficient calculations.</p> <br>
+        </div> 
+        <div class="project">
+            <img src="landingpage.png" alt="Project 2" class="tech-image">
+            <h3 class="text">Landing Page</h3>
+            <p class="text" style="text-align: center;">A captivating landing page crafted with HTML and CSS, designed to engage users with visually appealing elements, concise content, and a clear call-to-action.</p>
+        </div>
+    </section>
+    <section id="resume">
+        <h2 class="section-title">Resume</h2> <br>
+        <p><a href="resume.pdf" download class="text">Download Resume (PDF)</a></p>
+    </section>
+    <section id="contact">
+        <h2 class="section-title">Contact</h2> <br>
+        <p class="text">Email: jayeshkhemani37@gmail.com</p>
+    </section>
+    <footer>
+        <p style="color: #ffffff;">&copy; 2023 Jayesh Khemani. All rights reserved.</p>
+    </footer>
+</body>
+</html>
